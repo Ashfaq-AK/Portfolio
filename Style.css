@@ -64,7 +64,7 @@ header {
 
 .navbar {
     height: 50px;
-    width: 550px;
+    width: 45%;
     background-color: transparent;
     text-align: center;
     display: flex;
@@ -106,17 +106,12 @@ header {
     color: aliceblue;
 }
 
-/* .gapping {
-    height: 70px;
-    width: 100%;
-} */
-
 /*-----------------Main-Starts-------------------*/
 
 .s1 {
     background-size: 100vw;
     background-repeat: no-repeat;
-    height: 640px;
+    height: 100vh;
     animation: bg-animation 25s infinite;
     animation-timing-function: steps(1);
     position: relative;
@@ -134,7 +129,7 @@ header {
 }
 
 .s1-content h1 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     margin-left: 8%;
     padding-top: 10%;
     font-weight: 800;
@@ -167,8 +162,6 @@ header {
 .s2-first {
     display: flex;
     justify-content: space-evenly;
-    height: 500px;
-
 }
 
 .container {
@@ -300,7 +293,7 @@ header {
 
 @keyframes html-animation {
     from {width: 0%}
-    to {width: 74%;} 
+    to {width: 92%;} 
 }
 
 .skills-content .bar .progress-bar span.css {
@@ -319,7 +312,7 @@ header {
 
 @keyframes css-animation {
     from {width: 0%}
-    to {width: 84%;} 
+    to {width: 86%;} 
 }
 
 .skills-content .bar .progress-bar span.javascript {
@@ -338,7 +331,7 @@ header {
 
 @keyframes javascript-animation {
     from {width: 0%}
-    to {width: 62%;} 
+    to {width: 75%;} 
 }
 
 .skills-content .bar .progress-bar span.python {
@@ -356,7 +349,7 @@ header {
 
 @keyframes python-animation {
     from {width: 0%}
-    to {width: 79%;} 
+    to {width: 85%;} 
 }
 
 .skills-content .bar .progress-bar span.sql {
@@ -392,7 +385,7 @@ header {
 
 @keyframes java-animation {
     from {width: 0%}
-    to {width: 90%;} 
+    to {width: 91%;} 
 }
 
 .s2-second {
@@ -400,7 +393,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 400px;
 }
 
 .secondary-skills {
@@ -472,20 +464,50 @@ header {
 }
 
 .s2-third {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.temp-div {
+    width: 45%;
+    height: 200px;
+    background-color: #26C2A3;
+}
+
+.third-content {
     background-color: #B8B189;
-    height: 400px;
-    width: 96%;
+    height: 550px;
+    width: 50%;
     margin: 2%;
     border-radius: 6px;
     box-shadow: 0px 0px 20px #26C2A3;
 
 }
 
-.s2-third h3 {
+.third-content h3 {
     padding-top: 2%;
     text-align: center;
     font-size: 2rem;
     color: #0c0b0b;
     border-bottom: #161412 solid 3px;
     padding-bottom: 1%;
+}
+
+.bca {
+    margin: 2%;
+    height: 30%;
+    width: 40%;
+    background-color: #000000;
+    border-radius: 6px;
+}
+
+.rscit {
+    margin: 2%;
+    height: 30%;
+    width: 40%;
+    background-color: #000000;
+    border-radius: 6px;
+
 }
