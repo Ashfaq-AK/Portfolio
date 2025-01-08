@@ -9,7 +9,7 @@ body {
     background-color: #000000;
     color: aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    cursor: url('/pointer.png'), auto;
 }
 
 @keyframes bg-animation {
@@ -160,80 +160,22 @@ header {
 /*---S2---*/
 
 .s2-first {
+    background-color: transparent;
+    height: 900px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.container {
-    margin: 4%;
-    width: 550px;
+.container-one {
+    height: 800px;
+    width: 650px;
+    background-color: transparent;
 }
 
-.hover-img  {
-    text-align: center;
-    font-size: 1.4rem;
-    padding-bottom: 2%;
-    color: rgb(145, 145, 145);
-    animation: lgbtq 2s infinite;
-}
-
-@keyframes lgbtq {
-    20% {color: rgb(255, 48, 48);}
-    40% {color: rgb(255, 255, 107);}
-    60% {color: rgb(0, 255, 0);}
-    80% {color: rgb(84, 84, 255);}
-    100% {color: violet;}
-}
-
-.area {
-    padding-top: 2%;
-    width: 400px;
-    height: 350px;
-    margin-left: 10%;
-    cursor: pointer;
-}
-
-.card {
-    width: 400px;
-    height: 350px;
-    position: absolute;
-    background-image: url("/background.avif");
-    background-size: cover;
-    transition-duration: 1s;
-    border-radius: 10px;
-}
-
-.area:hover .card {
-    transform: perspective(20px) rotateX(2deg) translateY(-50px);
-}
-
-.bird {
-    -webkit-box-reflect: right;
-    width: 200px;
-    height: 250px;
-    margin-top: 3%;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: 1s;
-    animation: bird-dance 0.2s linear infinite;
-    animation-play-state: paused !important;
-}
-
-.area:hover .bird {
-    animation-play-state: running !important;
-    transform: translateY(-200px) translateX(-10px);
-}
-
-@keyframes bird-dance {
-    from {background-image: url("/bird1.png");}
-    to {background-image: url("/bird2.png");
-    }
-}
 
 .s2-content {
-    width: 700px;
-    height: 450px;
+    width: 600px;
+    height: 760px;
     background-color: rgb(184, 177, 137);
     box-shadow: 0px 0px 20px #26C2A3;
     border-radius: 6px;
@@ -241,7 +183,7 @@ header {
 }
 
 .s2-content h3 {
-    margin-top: 2%;
+    padding-top: 4%;
     text-align: center;
     font-size: 2rem;
     color: #0c0b0b;
@@ -388,29 +330,152 @@ header {
     to {width: 91%;} 
 }
 
-.s2-second {
-    background-color: #000000;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.secondary-skills {
-    height: 300px;
-    width: 46%;
-    background-color: #B8B189;
-    border-radius: 6px;
-    box-shadow: 0px 0px 20px #26C2A3;
-}
-
-.secondary-skills h3 {
-    padding-top: 2%;
+.skills-content .bar .progress-bar span.c {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #970037;
+    animation-name: c-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
     text-align: center;
-    font-size: 2rem;
-    color: #0c0b0b;
-    border-bottom: #161412 solid 3px;
-    padding-bottom: 2%;
+    font-size: 0.9rem;
+    width: 70%;
 }
+
+@keyframes c-animation {
+    from {width: 0%}
+    to {width: 89%;} 
+}
+
+.skills-content .bar .progress-bar span.cpp {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #970037;
+    animation-name: cpp-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 70%;
+}
+
+@keyframes cpp-animation {
+    from {width: 0%}
+    to {width: 88%;} 
+}
+
+.skills-content .bar .progress-bar span.mysql {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #970037;
+    animation-name: mysql-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 70%;
+}
+
+@keyframes mysql-animation {
+    from {width: 0%}
+    to {width: 88%;} 
+}
+
+.container-two {
+    height: 800px;
+    width: 700px;
+    background-color: transparent;
+}
+
+
+.inner1-container-two {
+    margin: auto;
+    margin-top: 5%;
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+}
+
+.bird-dance {
+    width: 550px;
+}
+
+.hover-img  {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 2%;
+    color: rgb(145, 145, 145);
+    animation: lgbtq 2s infinite;
+}
+
+@keyframes lgbtq {
+    20% {color: rgb(255, 48, 48);}
+    40% {color: rgb(255, 255, 107);}
+    60% {color: rgb(0, 255, 0);}
+    80% {color: rgb(84, 84, 255);}
+    100% {color: violet;}
+}
+
+.area {
+    padding-top: 2%;
+    width: 400px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.card {
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    background-image: url("/background.avif");
+    background-size: cover;
+    transition-duration: 1s;
+    border-radius: 10px;
+}
+
+.area:hover .card {
+    transform: perspective(20px) rotateX(2deg) translateY(-50px);
+}
+
+.bird {
+    -webkit-box-reflect: right;
+    width: 200px;
+    height: 250px;
+    margin-top: 3%;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 1s;
+    animation: bird-dance 0.2s linear infinite;
+    animation-play-state: paused !important;
+}
+
+.area:hover .bird {
+    animation-play-state: running !important;
+    transform: translateY(-200px) translateX(-10px);
+}
+
+@keyframes bird-dance {
+    from {background-image: url("/bird1.png");}
+    to {background-image: url("/bird2.png");
+    }
+}
+
+
+.inner2-container-two {
+    margin: auto;
+    margin-top: 3%;
+    height: 300px;
+    width: 600px;
+    background-color: transparent;
+}
+
 
 .word-dance {
     height: 290px;
@@ -463,6 +528,8 @@ header {
     }
 }
 
+
+/*--------------------------------*/
 .s2-third {
     width: 100%;
     display: flex;
