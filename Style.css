@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior:auto;
+
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 7px;  
-    height: 12px; 
+    height: 8px; 
 }
   
 ::-webkit-scrollbar-track {
@@ -115,10 +117,12 @@ header {
     animation: bg-animation 25s infinite;
     animation-timing-function: steps(1);
     position: relative;
+    background-attachment: fixed;
+    z-index: -1;
 }
 
 .s1-content {
-    position: absolute;
+    position: fixed;
     margin-top: 8%;
     margin-left: 2%;
     height: 450px;
@@ -126,6 +130,7 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(4px);
     border-radius: 20px;
+    z-index: -1;
 }
 
 .s1-content h1 {
@@ -160,26 +165,28 @@ header {
 /*---S2---*/
 
 .s2-first {
-    background-color: transparent;
+    background-color: black;
     height: 900px;
+    width: 99%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .container-one {
     height: 800px;
-    width: 650px;
+    width: 50%;
     background-color: transparent;
 }
 
 
 .s2-content {
-    width: 600px;
+    width: 96%;
     height: 760px;
     background-color: rgb(184, 177, 137);
     box-shadow: 0px 0px 20px #26C2A3;
     border-radius: 6px;
-    margin: 3%;
+    margin-left: 3%;
+    margin-top: 3%;
 }
 
 .s2-content h3 {
